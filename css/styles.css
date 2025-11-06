@@ -282,3 +282,90 @@ body,
 :root[data-theme="dark"] .skillmap-img {
     border-color: #8fb4d6;
 }
+
+/* ====== MEJORAS DE CONTRASTE EN MODO OSCURO ====== */
+
+/* Texto principal y enlaces */
+:root[data-theme="dark"] body,
+:root[data-theme="dark"] p,
+:root[data-theme="dark"] li,
+:root[data-theme="dark"] a,
+:root[data-theme="dark"] h1,
+:root[data-theme="dark"] h2,
+:root[data-theme="dark"] h3,
+:root[data-theme="dark"] h4,
+:root[data-theme="dark"] h5,
+:root[data-theme="dark"] h6 {
+  color: #eaeaea !important;
+}
+
+:root[data-theme="dark"] a:hover {
+  color: #8fb4d6 !important;
+  text-shadow: 0 0 6px rgba(143, 180, 214, 0.4);
+}
+
+/* Navbar y links */
+:root[data-theme="dark"] .navbar-dark .nav-link {
+  color: #eaeaea !important;
+}
+:root[data-theme="dark"] .navbar-dark .nav-link:hover {
+  color: #8fb4d6 !important;
+}
+
+/* Botones */
+:root[data-theme="dark"] .btn-outline-light {
+  color: #f0f0f0;
+  border-color: #f0f0f0;
+}
+:root[data-theme="dark"] .btn-outline-light:hover {
+  background-color: #f0f0f0;
+  color: #1a1a1a;
+}
+:root[data-theme="dark"] .btn-outline-primary {
+  border-color: #8fb4d6;
+  color: #8fb4d6;
+}
+:root[data-theme="dark"] .btn-outline-primary:hover {
+  background-color: #8fb4d6;
+  color: #101418;
+}
+
+/* Badges y progress bars */
+:root[data-theme="dark"] .badge {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e8eaed;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+:root[data-theme="dark"] .progress {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+:root[data-theme="dark"] .progress-bar {
+  filter: brightness(1.3);
+}
+
+/* Tarjetas y bordes */
+:root[data-theme="dark"] .card {
+  background-color: #1b2128;
+  color: #eaeaea;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Tablas o listas (como certificaciones) */
+:root[data-theme="dark"] .list-group-item {
+  background-color: #1b2128;
+  color: #eaeaea;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Footer */
+:root[data-theme="dark"] .footer-soft {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  color: #d0d3d6;
+}
+
+/* Texto secundario */
+:root[data-theme="dark"] .text-muted,
+:root[data-theme="dark"] .text-body-secondary,
+:root[data-theme="dark"] .text-light-emphasis {
+  color: #bfc3c8 !important;
+}
